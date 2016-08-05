@@ -1,0 +1,18 @@
+# Formatting and adding text / labels
+
+op <- par(mar = c(5,5,4,2) +0.5)
+plot(GDP/1000000, bty="l", col="blue", pch=18, axes = FALSE, xlab="", ylab="")
+title(main="Distribution of Gross Domestic Product", col.main="red", lines.main=14, sub="Source: Elaboration on World Bank Data", col.sub="grey", lines.sub=4, font.sub=3) 
+axis(1)
+pts <- pretty(GDP / 1000000, n=10)
+axis(2, at = pts, las = 1)
+box()
+title(ylab = "GDP ($bn)", line = 2)
+title(xlab = "Sequence of Countries", line = 2)
+par(op)
+text(182, 16.1, "US", pos = 3, xpd = F, col="black", vfont = NULL, font = 2, cex=0.6, offset=0)
+text(180, 8.1, "CHN", pos = 3, xpd = F, col="black", vfont = NULL, font = 2, cex=0.6, offset=0)
+text(178, 5.85, "JPN", pos = 3, xpd = F, col="black", vfont = NULL, font = 2, cex=0.6, offset=0)
+text(176, 3.35, "DEU", pos = 3, xpd = F, col="black", vfont = NULL, font = 2, cex=0.6, offset=0)
+text(8, 0.3, "Tuvalu ($40mm)", pos = 3, xpd = F, col="black", vfont = NULL, font = 2, cex=0.6, offset=0, adj=1)
+
