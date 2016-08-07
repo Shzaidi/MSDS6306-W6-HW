@@ -22,7 +22,7 @@ library(plotrix)
 
 ```
 
-# World Bank Country Data: Comparative Analysis of GDP vs Education Levels for Select Groups
+# World Bank Country Data: Comparative Analysis of GDP vs Income Categories for Select Groups
 
 ## Introduction 
 
